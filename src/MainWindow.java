@@ -8,7 +8,9 @@ public class MainWindow extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(370,380);
         setLocation(400,400);
-        add(new GameField());
+        JPanel t = new GameField();
+        t.setBackground(Color.DARK_GRAY);
+        add(t);
 
         setVisible(true);
     }
